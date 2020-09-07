@@ -197,6 +197,10 @@ section.copyright {
 }
 
 @media only screen and (min-width: 400px) {
+  nav button a {
+    font-size: 0.7rem;
+  }
+
   section.review {
     padding: 50px 30px 50px;
   }
