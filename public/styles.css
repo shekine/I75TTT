@@ -1,0 +1,197 @@
+/* Background pattern from Toptal Subtle Patterns */
+/* Triangle-Mosaic */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("triangle-mosaic.png");
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+nav {
+  background-color: #e9eced;
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.logo img {
+  width: 120px;
+  height: 40px;
+}
+
+nav button {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  background-color: #6e8187;
+  color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+nav button a {
+  color: #ffffff;
+}
+
+nav button:hover {
+  background-color: #57666b;
+}
+
+nav button:focus {
+  outline: 0;
+}
+
+section.introduction {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.introduction .profile-background {
+  margin: 50px;
+  height: 202px;
+  width: 202px;
+  background-color: #6e8187;
+  border-radius: 50%;
+}
+.introduction .profile-background img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.introduction .intro-text {
+  width: 90%;
+  background-color: #6e8187;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+}
+.introduction .intro-text h2 {
+  font-size: 24px;
+}
+.introduction .intro-text p {
+  font-size: 14px;
+}
+
+section.services {
+  background-color: #6e8187;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+section.services h2 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+section.services p.specialty-info {
+  width: 90%;
+  background-color: #e9eced;
+  color: #121516;
+  border-radius: 5px;
+  padding: 15px;
+}
+section.services div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e9eced;
+  color: #121516;
+  border-radius: 5px;
+  width: 90%;
+  height: 300px;
+  flex-wrap: wrap;
+  padding: 0 5px 5px;
+}
+section.services div p {
+  height: 8px;
+  margin: 0px 20px 10px;
+  width: 100px;
+}
+
+section.review {
+  background: transparent;
+  padding: 50px 30px 34px;
+  text-align: center;
+}
+section.review button {
+  background-color: #6e8187;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 10px;
+}
+section.review button a {
+  color: #ffffff;
+}
+
+section.contact {
+  background-color: #6e8187;
+  padding: 50px 30px;
+  text-align: center;
+}
+section.contact h4 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 20px;
+}
+section.contact h4 a {
+  color: #ffffff;
+}
+
+section.copyright {
+  background-color: #6e8187;
+  text-align: center;
+}
+section.copyright p {
+  margin: 0;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 400px) {
+  section.review {
+    padding: 50px 30px 14px;
+  }
+}
+@media only screen and (min-width: 560px) {
+  section.services div {
+    height: 240px;
+  }
+}
+@media only screen and (min-width: 805px) {
+  section.services div {
+    height: 150px;
+  }
+  section.services div p {
+    width: 150px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,219 @@
+/* Background pattern from Toptal Subtle Patterns */
+/* Triangle-Mosaic */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+
+$color-primary: #e9eced;
+$color-secondary: #6e8187;
+$color-tertiary: #121516;
+$color-white: #ffffff;
+$color-shadow: rgba(0, 0, 0, 0.3);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("triangle-mosaic.png");
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+nav {
+  background-color: $color-primary;
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0px 2px $color-shadow;
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.logo img {
+  width: 120px;
+  height: 40px;
+}
+
+nav button {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  background-color: $color-secondary;
+  color: $color-white;
+  box-shadow: 0 2px 2px $color-shadow;
+  border: none;
+
+  a {
+    color: $color-white;
+  }
+}
+
+nav button:hover {
+  background-color: darken($color-secondary, 10%);
+}
+
+nav button:focus {
+  outline: 0;
+}
+
+section.introduction {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.introduction .profile-background {
+  margin: 50px;
+  height: 202px;
+  width: 202px;
+  background-color: $color-secondary;
+  border-radius: 50%;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+
+.introduction .intro-text {
+  width: 90%;
+  background-color: $color-secondary;
+  color: $color-white;
+  border-radius: 5px;
+  padding: 15px;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+section.services {
+  background-color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+
+  h2 {
+    font-size: 32px;
+    color: $color-white;
+    margin-bottom: 25px;
+  }
+
+  p.specialty-info {
+    width: 90%;
+    background-color: $color-primary;
+    color: $color-tertiary;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-primary;
+    color: $color-tertiary;
+    border-radius: 5px;
+    width: 90%;
+    height: 300px;
+    flex-wrap: wrap;
+    padding: 0 5px 5px;
+
+    p {
+      height: 8px;
+      margin: 0px 20px 10px;
+      width: 100px;
+    }
+  }
+}
+
+section.review {
+  background: transparent;
+  padding: 50px 30px 34px;
+  text-align: center;
+
+  button {
+    background-color: $color-secondary;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+
+    a {
+      color: $color-white;
+    }
+  }
+}
+
+section.contact {
+  background-color: $color-secondary;
+  padding: 50px 30px;
+  text-align: center;
+
+  h4 {
+    color: $color-white;
+    font-size: 20px;
+    margin: 20px;
+
+    a {
+      color: $color-white;
+    }
+  }
+}
+
+section.copyright {
+  background-color: $color-secondary;
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: $color-white;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  section.review {
+    padding: 50px 30px 14px;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  section.services div {
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 805px) {
+  section.services div {
+    height: 150px;
+
+    p {
+      width: 150px;
+    }
+  }
+}
