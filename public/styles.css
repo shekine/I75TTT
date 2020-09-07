@@ -138,7 +138,7 @@ section.services div p {
 
 section.review {
   background: transparent;
-  padding: 50px 30px 34px;
+  padding: 50px 30px 50px;
   text-align: center;
 }
 section.review button {
@@ -177,7 +177,7 @@ section.copyright p {
 
 @media only screen and (min-width: 400px) {
   section.review {
-    padding: 50px 30px 14px;
+    padding: 50px 30px 50px;
   }
 }
 @media only screen and (min-width: 560px) {
