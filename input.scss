@@ -44,10 +44,10 @@ nav {
   h1 {
     color: #0f5e7d;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-    line-height: 18px;
+    font-size: 0.8rem;
+    line-height: 14px;
     padding-left: 5px;
-    padding-top: 3px;
+    width: 70%;
   }
 }
 
@@ -223,6 +223,13 @@ section.copyright {
 }
 
 @media only screen and (min-width: 805px) {
+  .logo h1 {
+    font-size: 1.2rem;
+    line-height: 18px;
+    padding-top: 3px;
+    width: 100%;
+  }
+
   section.services div {
     height: 150px;
 
