@@ -181,6 +181,10 @@ section.contact h4 {
 section.contact h4 a {
   color: #ffffff;
 }
+section.contact p {
+  font-size: 0.7rem;
+  padding: 5% 10% 0 10%;
+}
 section.contact .flex-container {
   display: flex;
   flex-direction: column;
@@ -190,6 +194,7 @@ section.contact .hours {
   background-color: #e9eced;
   border-radius: 5px;
   color: #121516;
+  justify-content: center;
   padding-bottom: 2%;
 }
 section.contact .hours h4 {
