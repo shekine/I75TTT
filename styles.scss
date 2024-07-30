@@ -213,6 +213,10 @@ section.contact {
     flex-direction: column;
   }
 
+  .map-lg {
+    display: none;
+  }
+
   .hours {
     align-content: center;
     background-color: $color-primary;
@@ -295,6 +299,14 @@ section.copyright {
       align-content: center;
       flex-direction: row;
       justify-content: center;
+
+    .map {
+      display: none;
+    }
+
+    .map-lg {
+      display: inline;
+    }
 
       .hours {
         margin: 0 0 0 5%;
