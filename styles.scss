@@ -189,6 +189,10 @@ section.contact {
   padding: 50px 30px;
   text-align: center;
 
+  h3 {
+    color: $color-white;
+  }
+
   h4 {
     color: $color-white;
     font-size: 20px;
@@ -198,6 +202,43 @@ section.contact {
       color: $color-white;
     }
   }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hours {
+    align-content: center;
+    background-color: $color-primary;
+    border-radius: 5px;
+    color: $color-tertiary;
+    padding-bottom: 2%;
+
+    h4 {
+      color: $color-tertiary;
+      margin: 3%;
+    }
+
+    table {
+      margin: auto;
+    }
+
+    table tr th {
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .col-left {
+      padding-right: 15px;
+      text-align: left;
+    }
+
+    .col-right {
+      padding-left: 15px;
+      text-align: right;
+    }
+  }
 }
 
 section.copyright {
@@ -205,8 +246,9 @@ section.copyright {
   text-align: center;
 
   p {
-    margin: 0;
     color: $color-white;
+    margin: 0;
+    padding-bottom: 1vh;
   }
 }
 
@@ -239,6 +281,19 @@ section.copyright {
 
     p {
       width: 150px;
+    }
+  }
+
+  section.contact {
+    .flex-container {
+      align-content: center;
+      flex-direction: row;
+      justify-content: center;
+
+      .hours {
+        margin: 0 0 0 5%;
+        padding: 0 5% 1%;
+      }
     }
   }
 }

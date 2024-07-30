@@ -170,6 +170,9 @@ section.contact {
   padding: 50px 30px;
   text-align: center;
 }
+section.contact h3 {
+  color: #ffffff;
+}
 section.contact h4 {
   color: #ffffff;
   font-size: 20px;
@@ -178,14 +181,45 @@ section.contact h4 {
 section.contact h4 a {
   color: #ffffff;
 }
+section.contact .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+section.contact .hours {
+  align-content: center;
+  background-color: #e9eced;
+  border-radius: 5px;
+  color: #121516;
+  padding-bottom: 2%;
+}
+section.contact .hours h4 {
+  color: #121516;
+  margin: 3%;
+}
+section.contact .hours table {
+  margin: auto;
+}
+section.contact .hours table tr th {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+section.contact .hours .col-left {
+  padding-right: 15px;
+  text-align: left;
+}
+section.contact .hours .col-right {
+  padding-left: 15px;
+  text-align: right;
+}
 
 section.copyright {
   background-color: #6e8187;
   text-align: center;
 }
 section.copyright p {
-  margin: 0;
   color: #ffffff;
+  margin: 0;
+  padding-bottom: 1vh;
 }
 
 @media only screen and (min-width: 400px) {
@@ -213,5 +247,14 @@ section.copyright p {
   }
   section.services div p {
     width: 150px;
+  }
+  section.contact .flex-container {
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section.contact .flex-container .hours {
+    margin: 0 0 0 5%;
+    padding: 0 5% 1%;
   }
 }/*# sourceMappingURL=styles.css.map */
